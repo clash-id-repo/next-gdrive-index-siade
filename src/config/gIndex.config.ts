@@ -27,7 +27,7 @@ const config: z.input<typeof Schema_Config> = {
    *
    * @default false
    */
-  showGuideButton: true,
+  showGuideButton: false,
 
   /**
    * How long the cache will be stored in the browser
@@ -47,7 +47,7 @@ const config: z.input<typeof Schema_Config> = {
      * Then, copy the folder id and paste it here
      */
     rootFolder:
-      "ebde3249388bddeeb672561cb7d09cb5f37ce68e4da6e129b184ed3ea3d1fb7be418c568ced654dc848d08ec379c82383b;015f77e6454486a1122747cb",
+      "88db8007ed52e3748f6f6eade69c8ff1ae3f81de6a290592b84af9844f728dc0ab5d40a79b3caa5b2de636ff3039262840;c3c6e2ea7aa51c8926704955",
 
     /**
      * If your rootfolder inside a shared drive, you NEED to set this to true
@@ -63,7 +63,7 @@ const config: z.input<typeof Schema_Config> = {
      * Then you need to encrypt it using `/api/internal/encrypt?q=:shared_drive_id` route
      */
     isTeamDrive: true,
-    sharedDrive: "bf288da2340e5ba67564927a4ab8d6cbecdeb2beaefe8e0944e35177e9aa403979f840;8bd27ef483a7f4596854fa1e",
+    sharedDrive: "2815a9ccc33e42eca44f32627ed4175d76e9a028a0c3494d401c11a93a7ddf3d1ba045;a0b906487f1da22ba04a6817",
 
     defaultQuery: ["trashed = false", "(not mimeType contains 'google-apps' or mimeType contains 'folder')"],
     defaultField:
@@ -204,7 +204,7 @@ const config: z.input<typeof Schema_Config> = {
      * The site password are set from Environment Variable (NEXT_GDRIVE_INDEX_PASSWORD)
      * It's because I don't want to store sensitive data in the code
      */
-    privateIndex: false,
+    privateIndex: true,
 
     /**
      * Maximum breadcrumb length
