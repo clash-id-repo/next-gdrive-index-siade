@@ -63,7 +63,7 @@ const config: z.input<typeof Schema_Config> = {
      * Then you need to encrypt it using `/api/internal/encrypt?q=:shared_drive_id` route
      */
     isTeamDrive: true,
-    sharedDrive: "1d122d3293a1a9d2604575206be8b146fa58b383bf333bf74766725a6ed68c26acca96;46c26781cc5940384ba95ee4",
+    sharedDrive: "14z3ikAoxFIrlNs0Gj8dtV8BOqDwCoMrp",
 
     defaultQuery: ["trashed = false", "(not mimeType contains 'google-apps' or mimeType contains 'folder')"],
     defaultField:
@@ -172,8 +172,8 @@ const config: z.input<typeof Schema_Config> = {
      *
      * You can set it to undefined if you don't want to use it
      */
-    siteName: "SIADE v.1",
-    siteNameTemplate: "SIADE v.1 - A file and archive management application system",
+    siteName: "SIADE",
+    siteNameTemplate: "SIADE - A file and archive management application system",
     siteDescription: "A file and archive management application system",
     siteIcon: "/logo.svg",
     siteAuthor: "Team IT  SDN 118 PEKANBARU ",
@@ -296,7 +296,7 @@ const config: z.input<typeof Schema_Config> = {
      * Add page load time on the footer
      * If you don't want to use it, you can set it to false
      */
-    experimental_pageLoadTime: false,
+    experimental_pageLoadTime: true,
   },
 };
 
