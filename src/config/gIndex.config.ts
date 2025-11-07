@@ -27,7 +27,7 @@ const config: z.input<typeof Schema_Config> = {
    *
    * @default false
    */
-  showGuideButton: false,
+  showGuideButton: true,
 
   /**
    * How long the cache will be stored in the browser
@@ -47,7 +47,7 @@ const config: z.input<typeof Schema_Config> = {
      * Then, copy the folder id and paste it here
      */
     rootFolder:
-      "2c366caa8ebb2d39c72403b6d150588afb949f93639183a17547b018180e73aecd499f;6cc7c3bb57060d1ec706f46a",
+      "ebde3249388bddeeb672561cb7d09cb5f37ce68e4da6e129b184ed3ea3d1fb7be418c568ced654dc848d08ec379c82383b;015f77e6454486a1122747cb",
 
     /**
      * If your rootfolder inside a shared drive, you NEED to set this to true
@@ -63,14 +63,14 @@ const config: z.input<typeof Schema_Config> = {
      * Then you need to encrypt it using `/api/internal/encrypt?q=:shared_drive_id` route
      */
     isTeamDrive: true,
-    sharedDrive: "14z3ikAoxFIrlNs0Gj8dtV8BOqDwCoMrp",
+    sharedDrive: "bf288da2340e5ba67564927a4ab8d6cbecdeb2beaefe8e0944e35177e9aa403979f840;8bd27ef483a7f4596854fa1e",
 
     defaultQuery: ["trashed = false", "(not mimeType contains 'google-apps' or mimeType contains 'folder')"],
     defaultField:
       "id, name, mimeType, thumbnailLink, fileExtension, modifiedTime, size, imageMediaMetadata, videoMediaMetadata, webContentLink, trashed",
     defaultOrder: "folder, name asc, modifiedTime desc",
     itemsPerPage: 50,
-    searchResult: 10,
+    searchResult: 5,
 
     /**
      * Special file name that will be used for certain purposes
@@ -173,8 +173,8 @@ const config: z.input<typeof Schema_Config> = {
      * You can set it to undefined if you don't want to use it
      */
     siteName: "SIADE",
-    siteNameTemplate: "SIADE - A file and archive management application system",
-    siteDescription: "A file and archive management application system",
+    siteNameTemplate: "SIADE - A simple file browser for Google Drive",
+    siteDescription: "A simple file browser for Google Drive",
     siteIcon: "/logo.svg",
     siteAuthor: "Team IT  SDN 118 PEKANBARU ",
     favIcon: "/favicon.png",
@@ -184,7 +184,7 @@ const config: z.input<typeof Schema_Config> = {
      * ref: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#robots
      */
     robots: "noindex, nofollow",
-    twitterHandle: "@bittercheeze",
+    twitterHandle: "",
 
     /**
      * Show file extension on the file name
@@ -296,7 +296,7 @@ const config: z.input<typeof Schema_Config> = {
      * Add page load time on the footer
      * If you don't want to use it, you can set it to false
      */
-    experimental_pageLoadTime: true,
+    experimental_pageLoadTime: false,
   },
 };
 
