@@ -47,7 +47,7 @@ const config: z.input<typeof Schema_Config> = {
      * Then, copy the folder id and paste it here
      */
     rootFolder:
-      "cb0accab2df3fd5048031751b757485d723a18b3da9f66003dbd4a5c1eb73d47ca4245;f6e7311091728088f9b6db5d",
+      "acc2eee53807fee86558e117b14e3b95f37d4fa7204711dfc0ae1470a232a8206ab6b40f7bd607fa19e3a386c68260d25c;2b88906103464a45348f7e45",
 
     /**
      * If your rootfolder inside a shared drive, you NEED to set this to true
@@ -63,7 +63,7 @@ const config: z.input<typeof Schema_Config> = {
      * Then you need to encrypt it using `/api/internal/encrypt?q=:shared_drive_id` route
      */
     isTeamDrive: true,
-    sharedDrive: "41fa1b54a6971cffff939d4fd18af9471bd957d99ae48a05de6a12f9ec817b96f05ead4e346ba3f8d6486cd2d2958ba191;2b310ae4953a8dd8e768946a",
+    sharedDrive: "b08e9bfaf012a1e25cf51a4c3ab1ebb01cb5158ae7c9c67b328e3e96cdac615b5f9705;8e8c05bf4113626220900b7f",
 
     defaultQuery: ["trashed = false", "(not mimeType contains 'google-apps' or mimeType contains 'folder')"],
     defaultField:
