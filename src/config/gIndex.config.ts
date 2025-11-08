@@ -47,7 +47,7 @@ const config: z.input<typeof Schema_Config> = {
      * Then, copy the folder id and paste it here
      */
     rootFolder:
-      "88db8007ed52e3748f6f6eade69c8ff1ae3f81de6a290592b84af9844f728dc0ab5d40a79b3caa5b2de636ff3039262840;c3c6e2ea7aa51c8926704955",
+      "cb0accab2df3fd5048031751b757485d723a18b3da9f66003dbd4a5c1eb73d47ca4245;f6e7311091728088f9b6db5d",
 
     /**
      * If your rootfolder inside a shared drive, you NEED to set this to true
@@ -63,7 +63,7 @@ const config: z.input<typeof Schema_Config> = {
      * Then you need to encrypt it using `/api/internal/encrypt?q=:shared_drive_id` route
      */
     isTeamDrive: true,
-    sharedDrive: "2815a9ccc33e42eca44f32627ed4175d76e9a028a0c3494d401c11a93a7ddf3d1ba045;a0b906487f1da22ba04a6817",
+    sharedDrive: "41fa1b54a6971cffff939d4fd18af9471bd957d99ae48a05de6a12f9ec817b96f05ead4e346ba3f8d6486cd2d2958ba191;2b310ae4953a8dd8e768946a",
 
     defaultQuery: ["trashed = false", "(not mimeType contains 'google-apps' or mimeType contains 'folder')"],
     defaultField:
@@ -172,9 +172,9 @@ const config: z.input<typeof Schema_Config> = {
      *
      * You can set it to undefined if you don't want to use it
      */
-    siteName: "SIADE",
-    siteNameTemplate: "SIADE - A simple file browser for Google Drive",
-    siteDescription: "A simple file browser for Google Drive",
+    siteName: "Sistem Informasi Arsip Pembelajaran",
+    siteNameTemplate: "SIAP - %t",
+    siteDescription: "SIAP - Sistem Informasi Arsip Pembelajaran",
     siteIcon: "/logo.svg",
     siteAuthor: "Team IT  SDN 118 PEKANBARU ",
     favIcon: "/favicon.png",
@@ -184,7 +184,7 @@ const config: z.input<typeof Schema_Config> = {
      * ref: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#robots
      */
     robots: "noindex, nofollow",
-    twitterHandle: "",
+    twitterHandle: "@bittercheeze",
 
     /**
      * Show file extension on the file name
@@ -204,7 +204,7 @@ const config: z.input<typeof Schema_Config> = {
      * The site password are set from Environment Variable (NEXT_GDRIVE_INDEX_PASSWORD)
      * It's because I don't want to store sensitive data in the code
      */
-    privateIndex: true,
+    privateIndex: false,
 
     /**
      * Maximum breadcrumb length
@@ -254,7 +254,19 @@ const config: z.input<typeof Schema_Config> = {
   {
     "icon": "Instagram",
     "name": "Our Instagram",
-    "href": "https://www.instagram.com/sdn.118pku/",
+    "href": "https://instagram.com/sdn118.pku",
+    "external": true
+  },
+  {
+    "icon": "Link",
+    "name": "Main Site",
+    "href": "https://sdn118pekanbaru.sch.id",
+    "external": true
+  },
+  {
+    "icon": "BadgeCheck",
+    "name": "Developer",
+    "href": "https://nusakarsa.id",
     "external": true
   }
 ],
@@ -268,7 +280,13 @@ const config: z.input<typeof Schema_Config> = {
      *  href: string,
      * }
      */
-    supports: [],
+    supports: [
+  {
+    "name": "Saweria",
+    "currency": "IDR",
+    "href": "https://saweria.co/clashid"
+  }
+],
 
     /**
      * Footer content
@@ -289,7 +307,10 @@ const config: z.input<typeof Schema_Config> = {
      */
     footer: [
   {
-    "value": "Made with ❤️ by [{{ author }}](https://sdn118pekanbaru.sch.id)"
+    "value": "Copyright © {{ year }} - {{ siteName }} v. {{ version }}. All Rights Reserved"
+  },
+  {
+    "value": "Made with 🪄 by [{{ author }}](https://sdn118pekanbaru.sch.id)"
   }
 ],
     /**
