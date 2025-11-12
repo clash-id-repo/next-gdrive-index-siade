@@ -124,7 +124,7 @@ const config: z.input<typeof Schema_Config> = {
      *
      * Default: 100MB
      */
-    streamMaxSize: 104857600,
+    streamMaxSize: 0,
 
     /**
      * Maximum file size that can be downloaded via api routes
@@ -137,7 +137,7 @@ const config: z.input<typeof Schema_Config> = {
      *
      * Default: 4MB
      */
-    maxFileSize: 4194304,
+    maxFileSize: 0,
 
     /**
      * Allow user to download protected file without password.
@@ -254,19 +254,19 @@ const config: z.input<typeof Schema_Config> = {
   {
     "icon": "Instagram",
     "name": "Our Instagram",
-    "href": "https://instagram.com/sdn118.pku",
+    "href": "https://instagram.com/sdn.118pku",
     "external": true
   },
   {
     "icon": "Link",
-    "name": "Main Site",
-    "href": "https://sdn118pekanbaru.sch.id",
+    "name": "SIAP",
+    "href": "https://siap.sdn118pekanbaru.sch.id",
     "external": true
   },
   {
     "icon": "BadgeCheck",
-    "name": "Developer",
-    "href": "https://nusakarsa.id",
+    "name": "Main Site",
+    "href": "https://sdn118pekanbaru.sch.id",
     "external": true
   }
 ],
